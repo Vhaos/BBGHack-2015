@@ -1191,46 +1191,6 @@
 			}
 
 
-			// CREATE ACCORDION
-			var accordionIndex = {};
-			function createList() {
-				var accordion = jQuery('#accordion');
-				var index = 0;
-				for (var c in countryData) {
-					var continentData = countryData[c];
-					accordion.append("<h3>" + continentData.title + "</h3>");
-					var div = jQuery("<div></div>");
-					accordion.append(div);
-
-					accordionIndex[c] = index;
-
-					var countries = continentData.countries;
-
-					for (var i = 0; i < countries.length; i++) {
-						var countryId = countries[i];
-						var name = countryNames[countryId];
-
-						if(availableCountries[name]){
-							if (name) {
-								div.append('<label><li style="padding-bottom:10px;"><input class="accordion_cb" type="checkbox" value="' + countryId + '" id="cb_' + countryId + '" style="float:left; margin-left: -20px;">' + name + '</label></li>');
-							}
-						}
-					}
-
-					index++;
-				}
-
-				jQuery(".accordion_cb").click(function() {
-					highlightCountries();
-				});
-
-				accordion.accordion({
-					active: false,
-					collapsible: true,
-					heightStyle: "fill"
-				});
-			}
-
 
 			// TIME SLIDER
 			var sliderPlaying = false;
@@ -1473,20 +1433,14 @@
 		<div id="wrapper">
 				<div id="loading-div" style="position:absolute;"><img src="/img/ajax-loader.gif"></div>
 				<div id="application" style="width:100%; height: 100%; margin:auto; position:relative;">
-					<div id="right-side-div" style="width:300px; float:right; height:100%; position:relative;">
-						<div id="small-map-div" style="margin:0px 5px 5px 5px; background-color:#292929;"></div>
-						<div id="list-div" style="margin:5px; background-color:#292929;">
-							<div id="accordion" style="height:100%;">
-							</div>
-						</div>
-					</div>
-					<div id="main-div" style="margin-right:310px;">
+					
+					<div id="main-div" style="height:100%; width:100%">
 						<div id="tabs">
 							<ul>
 							</ul>
 
 							<div id="tabs-1">
-								<div id="main-map-div" style="margin-left:80px; margin-right:5px; background-color:#292929;">
+								<div id="main-map-div" style="margin-left:80px; height:100%; margin-right:5px; background-color:#292929;">
 								</div>
 								<div id="map-controls-div" position="relative">
 									<div id="map-type-div" style="width:150px; float:right; text-align:right; margin: 18px 5px 0px 80px;">
