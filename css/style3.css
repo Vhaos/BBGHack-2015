@@ -53,10 +53,24 @@ table {
 
 
 #sidebar{
+    color: #ffffff;
     background: rgba(20,20,20, 0.5);
     width: 250px;
-    height:550px;
+    height: 430px;
     position:fixed;
-    top:50px;
+    top: 100px;
     left:60px;
+}
+#form_container{
+    margin: 20px 20px 20px 20px;
+}
+
+#topbar{
+    color: #ffffff;
+    width: 250px;
+    background-image: url("../img/logo.png");
+    height: 70px;
+    position:fixed;
+    top:10px;
+    left: 550px;
 }
