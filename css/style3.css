@@ -59,7 +59,7 @@ table {
     height: 430px;
     position:fixed;
     top: 100px;
-    left:60px;
+    left:140px;
 }
 #form_container{
     margin: 20px 20px 20px 20px;
@@ -72,5 +72,5 @@ table {
     height: 70px;
     position:fixed;
     top:10px;
-    left: 550px;
+    left: 46%;
 }
