@@ -96,7 +96,7 @@
 			var activeTab = 1;
 
 			// some strings (there might be some in HTML too)
-			var mapOption0 = "Income per person";
+			var mapOption0 = "People fit your profile";
 			var mapOption1 = "Life expectancy";
 			var mapOption2 = "Population";
 			// which map option is selected by default
@@ -1480,7 +1480,6 @@
 			
 			
   			<select class="form-control" id="select">
-  				<option selected="selected" >Origin Airport</option>
 	  			<option value="DE" label="DE - Germany">DE - Germany</option>
 	  			<option value="NO" label="NO - Norway">NO - Norway</option>
 	  			<option value="RU" label="RU - Russian Federation">RU - Russian Federation</option>
@@ -1490,7 +1489,7 @@
 	  			<option value="FR" label="FR - France">FR - France</option>
 	  			<option value="BR" label="BR - Brazil">BR - Brazil</option>
 	  			<option value="SE" label="SE - Sweden">SE - Sweden</option>
-	  			<option value="GB" label="GB - Great Britain">GB - Great Britain</option>
+	  			<option value="GB" selected="selected" label="GB - Great Britain">GB - Great Britain</option>
 	  			<option value="US" label="US - United States">US - United States</option>
 	  			<option value="CA" label="CA - Canada">CA - Canada</option>
 	  			<option value="EC" label="EC - Ecuador">EC - Ecuador</option>
@@ -1512,7 +1511,7 @@
 	  			<option value="NL" label="NL - Netherlands">NL - Netherlands</option>
   			</select>
   			<br/>
-  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Departure Date (DD/MM/YYYY)">
+  			<input type="text" class="form-control" id="inputSuccess"  value="05/08/2015" placeholder="Departure Date (DD/MM/YYYY)">
   			<br/>
   			<select class="form-control" id="select">
 	          <option>Length of Stay</option>
@@ -1520,7 +1519,7 @@
 	          <option>2</option>
 	          <option>3</option>
 	          <option>4</option>
-	          <option>5</option>
+	          <option selected="selected" >5</option>
 	          <option>6</option>
 	          <option>7</option>
 	          <option>8</option>
@@ -1531,17 +1530,26 @@
 	          <option>I never Want to go back to my day job again!</option>
 	        </select>
   			<br/>
-  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Maximum Fare(£)">
-  			<br/>
-  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Prefered Theme(Beach) ">
+  			<input type="text" class="form-control" id="inputSuccess" value="2000.00"  placeholder="Maximum Fare(£)">
   			<br/>
   			<select class="form-control" id="select">
-	          <option>Age Range</option>
-	          <option>Family</option>
-	          <option>Young Adults</option>
-	          <option>Elderly</option>
-	          <option>Old unmarried people</option>
+	          <option>Length of Stay</option>
+	          <option>Hiking</option>
+	          <option>Ski</option>
+	          <option>Beach</option>
+	          <option selected="selected" >Night Life</option>
+	          <option>art galleries</option>
+	          <option>Museums</option>
+	          <option>Zoo</option>
+	          <option>Water Parks</option>
 	        </select>
+  			<br/>
+  			<select class="form-control" id="select">
+          <option>Age Range</option>
+          <option>A family member</option>
+          <option selected="selected" >A young Adult</option>
+          <option>An elderly</option>
+        </select>
   			<br/>
 			<button type="submit" class="btn btn-primary">Submit</button>
 

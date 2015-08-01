@@ -19,14 +19,12 @@
 		<h3 class="fs-subtitle" style="align:left;">I am...</h3>
 	  	<select class="form-control" id="select">
           <option>Age Range</option>
-          <option>Family</option>
-          <option>Young Adults</option>
-          <option>Elderly</option>
-          <option>Old unmarried people</option>
+          <option>A family member</option>
+          <option>A young Adult</option>
+          <option>An elderly</option>
         </select>
 		
 		<select class="form-control" id="select">
-  				<option selected="selected" >Origin Airport</option>
 	  			<option value="DE" label="DE - Germany">DE - Germany</option>
 	  			<option value="NO" label="NO - Norway">NO - Norway</option>
 	  			<option value="RU" label="RU - Russian Federation">RU - Russian Federation</option>
@@ -36,7 +34,7 @@
 	  			<option value="FR" label="FR - France">FR - France</option>
 	  			<option value="BR" label="BR - Brazil">BR - Brazil</option>
 	  			<option value="SE" label="SE - Sweden">SE - Sweden</option>
-	  			<option value="GB" label="GB - Great Britain">GB - Great Britain</option>
+	  			<option value="GB" selected="selected" label="GB - Great Britain">GB - Great Britain</option>
 	  			<option value="US" label="US - United States">US - United States</option>
 	  			<option value="CA" label="CA - Canada">CA - Canada</option>
 	  			<option value="EC" label="EC - Ecuador">EC - Ecuador</option>
@@ -61,23 +59,23 @@
   		<input type="button" name="next" class="next action-button" value="Next" />
 	</fieldset>
 	<fieldset>
-		<h2 class="fs-title">How Long are you away?</h2>
+		<h2 class="fs-title">I want to be away for...</h2>
 		<h3 class="fs-subtitle">Step 2</h3>
 		  	<select class="form-control" id="select">
 	          <option>Length of Stay</option>
-	          <option>1</option>
-	          <option>2</option>
-	          <option>3</option>
-	          <option>4</option>
-	          <option>5</option>
-	          <option>6</option>
-	          <option>7</option>
-	          <option>8</option>
-	          <option>9</option>
-	          <option>10</option>
-	          <option>11</option>
-	          <option>12</option>
-	          <option>I never Want to go back to my day job again!</option>
+	          <option>1 day</option>
+	          <option>2 days</option>
+	          <option>3 days</option>
+	          <option>4 days</option>
+	          <option>5 days</option>
+	          <option>6 days</option>
+	          <option>7 days</option>
+	          <option>8 days</option>
+	          <option>9 days</option>
+	          <option>10 days</option>
+	          <option>11 days</option>
+	          <option>12 days</option>
+	          <option>I never Want to go back to my day job again! (30 days)</option>
 	        </select>
 		<input type="button" name="previous" class="previous action-button" value="Previous" />
 		<input type="button" name="next" class="next action-button" value="Next" />
@@ -87,7 +85,17 @@
 		<h3 class="fs-subtitle">Step 3</h3>
 		<input type="text" class="form-control" id="inputSuccess"  placeholder="Maximum Fare(£)">
   			<br/>
-  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Prefered Theme(Beach) ">
+  			<select class="form-control" id="select">
+	          <option>Length of Stay</option>
+	          <option>Hiking</option>
+	          <option>Ski</option>
+	          <option>Beach</option>
+	          <option>Night Life</option>
+	          <option>art galleries</option>
+	          <option>Museums</option>
+	          <option>Zoo</option>
+	          <option>Water Parks</option>
+	        </select>
   			<br/>
 
 		<input type="button" name="previous" class="previous action-button" value="Previous" />
