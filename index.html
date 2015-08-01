@@ -18,6 +18,14 @@
 	<meta property="fb:app_id" content="563198717101351"/>
 	<link rel="stylesheet" href="/css/style.css" type="text/css">
 	<link rel="stylesheet" href="/css/style2.css" type="text/css">
+
+
+<link rel="stylesheet" href="/css/style3.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstap.min.css">
+
+
+
 	<script src="http://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
 	<script src="http://www.amcharts.com/lib/3/serial.js" type="text/javascript"></script>
 	<script src="http://www.amcharts.com/lib/3/xy.js" type="text/javascript"></script>
@@ -348,15 +356,15 @@
 				jQuery('#application').height(appHeight);
 				//jQuery('#application').css('margin-top', vMargin);
 				//jQuery('#application').css('margin-bottom', vMargin);
-				jQuery('#list-div').height(appHeight - smallMapHeight - tabsHeight - 5);
-				jQuery('#small-map-div').height(smallMapHeight);
+				//jQuery('#list-div').height(appHeight - smallMapHeight - tabsHeight - 5);
+				//jQuery('#small-map-div').height(smallMapHeight);
 				jQuery('#play-controls-div').height(playControlsHeight);
 				jQuery('#x-axis-controls-div').height(xAxisControlsHeight);
 				jQuery('#map-controls-div').height(mapControlsHeight);
 				jQuery('#main-chart-div').height(appHeight - playControlsHeight - xAxisControlsHeight - tabsHeight);
 				jQuery('#main-map-div').height(appHeight - playControlsHeight - mapControlsHeight - tabsHeight);
 				jQuery('#x-axis-text-div').html(xAxisText);
-				jQuery('#right-side-div').css('padding-top', tabsHeight);
+				//jQuery('#right-side-div').css('padding-top', tabsHeight);
 				jQuery('#loading-div').css("top", documentHeight / 2 - 15);
 				//jQuery('#loading-div').css("left", documentWidth /2 - 15);
 
@@ -1436,8 +1444,6 @@
 					
 					<div id="main-div" style="height:786px; width:100%">
 						<div id="tabs">
-							<ul>
-							</ul>
 
 							<div id="tabs-1">
 								<div id="main-map-div" style="margin-left:80px; height:100%; margin-right:5px; background-color:#292929;">
@@ -1461,6 +1467,98 @@
 				</div>
 			
 		</div>
+
+
+
+
+
+<div id="sidebar">
+	<div id="form_container">
+		<form>
+			
+			
+  			<select class="form-control" id="select">
+  				<option selected="selected" >Origin Airport</option>
+	  			<option value="DE" label="DE - Germany">DE - Germany</option>
+	  			<option value="NO" label="NO - Norway">NO - Norway</option>
+	  			<option value="RU" label="RU - Russian Federation">RU - Russian Federation</option>
+	  			<option value="PT" label="PT - Portugal">PT - Portugal</option>
+	  			<option value="DK" label="DK - Denmark">DK - Denmark</option>
+	  			<option value="NZ" label="NZ - New Zealand">NZ - New Zealand</option>
+	  			<option value="FR" label="FR - France">FR - France</option>
+	  			<option value="BR" label="BR - Brazil">BR - Brazil</option>
+	  			<option value="SE" label="SE - Sweden">SE - Sweden</option>
+	  			<option value="GB" label="GB - Great Britain">GB - Great Britain</option>
+	  			<option value="US" label="US - United States">US - United States</option>
+	  			<option value="CA" label="CA - Canada">CA - Canada</option>
+	  			<option value="EC" label="EC - Ecuador">EC - Ecuador</option>
+	  			<option value="IL" label="IL - Israel">IL - Israel</option>
+	  			<option value="UY" label="UY - Uruguay">UY - Uruguay</option>
+	  			<option value="IN" label="IN - India">IN - India</option>
+	  			<option value="CL" label="CL - Chile">CL - Chile</option>
+	  			<option value="GR" label="GR - Greece">GR - Greece</option>
+	  			<option value="IT" label="IT - Italy">IT - Italy</option>
+	  			<option value="MX" label="MX - Mexico">MX - Mexico</option>
+	  			<option value="CO" label="CO - Colombia">CO - Colombia</option>
+	  			<option value="ES" label="ES - Spain">ES - Spain</option>
+	  			<option value="VE" label="VE - Venezuela">VE - Venezuela</option>
+	  			<option value="CR" label="CR - Costa Rica">CR - Costa Rica</option>
+	  			<option value="AR" label="AR - Argentina">AR - Argentina</option>
+	  			<option value="PA" label="PA - Panama">PA - Panama</option>
+	  			<option value="AU" label="AU - Australia">AU - Australia</option>
+	  			<option value="PE" label="PE - Peru">PE - Peru</option>
+	  			<option value="NL" label="NL - Netherlands">NL - Netherlands</option>
+  			</select>
+  			<br/>
+  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Departure Date (DD/MM/YYYY)">
+  			<br/>
+  			<select class="form-control" id="select">
+	          <option>Length of Stay</option>
+	          <option>1</option>
+	          <option>2</option>
+	          <option>3</option>
+	          <option>4</option>
+	          <option>5</option>
+	          <option>6</option>
+	          <option>7</option>
+	          <option>8</option>
+	          <option>9</option>
+	          <option>10</option>
+	          <option>11</option>
+	          <option>12</option>
+	          <option>I never Want to go back to my day job again!</option>
+	        </select>
+  			<br/>
+  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Maximum Fare(£)">
+  			<br/>
+  			<input type="text" class="form-control" id="inputSuccess"  placeholder="Prefered Theme(Beach) ">
+  			<br/>
+  			<select class="form-control" id="select">
+	          <option>Age Range</option>
+	          <option>Family</option>
+	          <option>Young Adults</option>
+	          <option>Elderly</option>
+	          <option>Old unmarried people</option>
+	        </select>
+  			<br/>
+			<button type="submit" class="btn btn-primary">Submit</button>
+
+		</form>
+	</div>
+
+</div>
+<div id="topbar">
+	
+</div>
+
+
+
+
+
+
+
+
+
 		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			_uacct = "UA-296088-3";
@@ -1479,5 +1577,6 @@
 			})();
 
 		</script>
+
 	</body>
 	</html>
